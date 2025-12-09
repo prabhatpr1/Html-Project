@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Quiz</title>
+</head>
+<body style="font-family: Verdana, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #e8f5e9;">
+    
+    <header style="text-align: center; margin-bottom: 30px; background-color: #4caf50; color: white; padding: 15px;">
+        <h1 style="margin: 0;">Web Dev Basics Quiz</h1>
+        <p>Test your knowledge on HTML, CSS, and JavaScript!</p>
+    </header>
+
+    <form action="/submit-quiz" method="post" style="padding: 20px; background-color: white; border: 1px solid #c8e6c9;">
+        <!-- Q1 -->
+        <fieldset style="margin-bottom: 30px; border: 1px solid #ccc; padding: 15px;">
+            <legend style="font-weight: bold; font-size: 1.1em; color: #388e3c; padding: 0 10px;">Question 1: HTML</legend>
+            <p>What does the HTML semantic tag `&lt;article&gt;` primarily represent?</p>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q1a" name="q1_html" value="a">
+                <label for="q1a">A. A section that represents contact information.</label>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q1b" name="q1_html" value="b" required>
+                <label for="q1b">B. A self-contained, independent piece of content.</label>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q1c" name="q1_html" value="c">
+                <label for="q1c">C. The main navigation bar.</label>
+            </div>
+        </fieldset>
+
+        <!-- Q2 -->
+
+        <fieldset style="margin-bottom: 30px; border: 1px solid #ccc; padding: 15px;">
+            <legend style="font-weight: bold; font-size: 1.1em; color: #388e3c; padding: 0 10px;">Question 2: CSS</legend>
+            <p>Which CSS property is used to center a block element horizontally?</p>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q2a" name="q2_css" value="a">
+                <label for="q2a">A. `align-items: center;`</label>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q2b" name="q2_css" value="b" required>
+                <label for="q2b">B. `margin: auto;` (with a defined width)</label>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q2c" name="q2_css" value="c">
+                <label for="q2c">C. `text-align: center;`</label>
+            </div>
+        </fieldset>
+
+        <!-- Q3 -->
+        
+        <fieldset style="margin-bottom: 30px; border: 1px solid #ccc; padding: 15px;">
+            <legend style="font-weight: bold; font-size: 1.1em; color: #388e3c; padding: 0 10px;">Question 3: JavaScript</legend>
+            <p>What is the correct way to declare a constant variable in modern JavaScript?</p>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q3a" name="q3_js" value="a">
+                <label for="q3a">A. `let myVar = 10;`</label>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q3b" name="q3_js" value="b">
+                <label for="q3b">B. `variable myVar = 10;`</label>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <input type="radio" id="q3c" name="q3_js" value="c" required>
+                <label for="q3c">C. `const myVar = 10;`</label>
+            </div>
+        </fieldset>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button type="submit" style="padding: 10px 25px; background-color: #4caf50; color: white; border: none; cursor: pointer; font-size: 1.1em;">Submit Answers</button>
+        </div>
+
+    </form>
+    
+    <footer style="text-align: center; margin-top: 20px; color: #666;">
+        <p>&copy; developerPr</p>
+    </footer>
+    
+</body>
+</html>

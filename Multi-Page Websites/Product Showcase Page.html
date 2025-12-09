@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase Page</title>
+</head>
+<body>
+
+<header>
+        <h1>Storefront — Product Showcase</h1>
+    <nav>
+        <a href="#products">Products</a> |
+        <a href="#categories">Categories</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Use a table to simulate a grid Columns: Name | Description | Price | Action -->
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Desk Lamp</td>
+                <td>Adjustable LED desk lamp, compact and bright.</td>
+                <td>₹799</td>
+                <td>
+                    <!-- add-to-cart is a placeholder input in HTML-only setup -->
+                    <form method="post" action="#">
+                        <input type="hidden" name="product" value="Desk Lamp">
+                        <input type="number" name="qty" value="1" min="1" style="width:50px">
+                        <input type="submit" value="Add to cart">
+                    </form>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Bluetooth Speaker</td>
+                <td>Portable speaker with long battery life.</td>
+                <td>₹1,499</td>
+                <td>
+                    <form method="post" action="#">
+                        <input type="hidden" name="product" value="Bluetooth Speaker">
+                        <input type="number" name="qty" value="1" min="1" style="width:50px">
+                        <input type="submit" value="Add to cart">
+                    </form>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Water Bottle</td>
+                <td>Stainless steel bottle, 750ml.</td>
+                <td>₹499</td>
+                <td>
+                    <form method="post" action="#">
+                        <input type="hidden" name="product" value="Water Bottle">
+                        <input type="number" name="qty" value="1" min="1" style="width:50px">
+                        <input type="submit" value="Add to cart">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+</table>
+</section>
+</main>
+
+
+<footer>
+    <p>&copy; 2025 Storefront</p>
+</footer>
+    
+</body>
+</html>

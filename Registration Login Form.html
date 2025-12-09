@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Login (HTML-only)</title>
+</head>
+<body>
+
+<header>
+<h1>Account</h1>
+    <nav>
+        <a href="#register">Register</a> |
+        <a href="#login">Login</a>
+    </nav>
+</header>
+
+<main>
+<section id="register">
+        <h2>Register</h2>
+    <!-- registration form: method/action are placeholders because there's no server in HTML-only setup -->
+<form method="post" action="#">
+            <label for="reg-name">Full name:</label>
+            <br>
+            <input type="text" id="reg-name" name="full_name" required><br>
+            <br>
+            <label for="reg-email">Email:</label>
+            <br>
+            <input type="email" id="reg-email" name="email" required><br>
+            <br>
+            <label for="reg-pass">Password:</label>
+            <br>
+            <input type="password" id="reg-pass" name="password" required>
+            <br>
+            <br>
+            <label for="reg-role">Role:</label>
+            <br>
+
+    <select id="reg-role" name="role">
+        <option>Developer</option>
+        <option>Designer</option>
+        <option>Student</option>
+    </select>
+    <br>
+    <br>
+        <input type="submit" value="Create account">
+</form>
+</section>
+
+<hr>
+
+
+<section id="login">
+    <h2>Login</h2>
+<form method="post" action="#">
+        <label for="login-email">Email:</label>
+        <br>
+        <input type="email" id="login-email" name="email" required>
+        <br>
+        <br>
+        <label for="login-pass">Password:</label>
+        <br>
+        <input type="password" id="login-pass" name="password" required>
+        <br>
+        <br>
+        <label>
+        <input type="checkbox" name="remember"> Remember me
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Login">
+</form>
+</section>
+</main>
+
+
+<footer>
+<p>Note: This is an HTML-only mockup. To make it functional, connect to a backend or add client-side JS.</p>
+</footer>
+    
+</body>
+</html>
